@@ -1,46 +1,89 @@
 @import url('./reset.css');
 body{
-    background-color: #1C1C1C;
+
+    background-color: #0C0C0C;
     color: #FFFFFF;
     font-family: Urbanist, PingFang TC, inter, sans-serif;
     max-width: 1440px;
     margin: 0 auto;
+    line-height: 1.5;
 }
 /* ------------- nav ------------- */
-header{}
+header{
+    padding-top: 42px;
+}
 nav{
+    /* border: orange 2px solid; */
     width: 1200px;
     height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    box-sizing: border-box;
+    background-color: #1C1C1C;
+    border-radius: 80px;
+    padding: 0 56px;
 }
 .logo{}
-.logo a{}
+.logo a{
+    /* border: red 2px solid; */
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 80px;
+    padding: 20px;
+}
 .logo a img{
+    /* border: orange 2px solid; */
     width: 44px;
     height: 24px;
 }
 /* 主選單 */
 ul{
-    font-size: 0;
     display: flex;
-    text-align: center;
+    align-items: center;
+    /* border: red 2px solid; */
+    font-size: 0;
     justify-content: flex-end;
+    box-sizing: border-box;
+    height: 84px;
 }
 ul li{
-    font-size: 16px;
-    display: inline-block;
-    position: relative;
+    /* border: green 2px solid; */
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 80px;
+    padding: 0 10px;
+    font-weight: 450;
 
 }
 ul li a{
+    /* border: yellow 2px solid; */
     color: #FFFFFF;
     text-decoration: none;
     display: block;
+    padding: 20px 20px; 
+    line-height: 1;
+    border-radius: 80px;
+    transition: transform 0.1s ease, background-color 0.2s ease;
 }
-/* 子選單 */
-.dropdown{}
-.dropdown li{
-    display: none;
-    position: absolute;
+
+ul li:nth-child(5) a{
+    border-radius: 80px;
+    margin-left: 10px;
+    color: #1C1C1C;
+    background-color: #FFFFFF;
+
 }
-.dropdown li a{}
 /* 動效 */
+ul li a:hover{
+    background-color: #2c2b2b;
+    border-radius: 80px;
+    padding: 20px 20px;
+}
+ul li:nth-child(5) a:hover {
+    border-radius: 80px;
+    margin-left: 10px;
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+}
