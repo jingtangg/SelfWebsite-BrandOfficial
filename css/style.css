@@ -1,0 +1,46 @@
+@import url('./reset.css');
+body{
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    font-family: Urbanist, PingFang TC, inter, sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* ------------- nav ------------- */
+header{}
+nav{
+    width: 1200px;
+    height: 84px;
+}
+.logo{}
+.logo a{}
+.logo a img{
+    width: 44px;
+    height: 24px;
+}
+/* 主選單 */
+ul{
+    font-size: 0;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+}
+ul li{
+    font-size: 16px;
+    display: inline-block;
+    position: relative;
+
+}
+ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+}
+/* 子選單 */
+.dropdown{}
+.dropdown li{
+    display: none;
+    position: absolute;
+}
+.dropdown li a{}
+/* 動效 */
