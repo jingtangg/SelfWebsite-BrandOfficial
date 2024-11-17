@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOWDONE | 細節成就整體 專注淬煉非凡</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/price.css">
+    <link href="
+https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.min.css
+" rel="stylesheet">
+    <script src="./js/cursor.js" defer></script>
+
+</head>
+
+<body>
+    <div class="custom-cursor"></div>
+    <!-- navbar -->
+    <header>
+        <nav>
+
+            <!-- logo section -->
+            <div class="logo">
+                <a href="./index.html"><img src="./images/icon_02.png" alt="HOWDONE Logo"></a>
+            </div>
+
+            <!-- menu section -->
+             <div class="menu">
+                <ul>
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="#">解決方案</a></li>
+                    <li><a href="./about.html">關於我</a></li>
+                    <li><a href="./map.html">服務據點</a></li>
+                    <li><a href="./price.html">即刻探索</a></li>
+                 </ul>
+             </div>
+           
+        </nav>
+    </header>
+
+    <main>
+        <h1>探索您的專案旅程</h1>
+        <h2>告訴我們您的專案構想與需求，我們的專業團隊將迅速與您聯繫，為您量身打造最佳方案。每個細節都將被用心對待，確保您獲得值得信賴的合作體驗。</h2>
+        <form action="/submit-form" method="post" class="form-container">
+
+            <!-- 姓名 -->
+             <div class="form-group">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" placeholder="請輸入姓名">
+             </div>
+
+            <!-- 電子郵件 -->
+             <div class="form-group">
+                <label for="email">電子郵件</label>
+                <input type="email" id="email" name="email" placeholder="請輸入電子郵件">     
+             </div>
+      
+            <!-- 聯絡電話 -->
+            <div class="form-group">
+                <label for="tel">聯絡電話</label>
+                <input type="tel" id="tel" name="tel" placeholder="請輸入聯絡電話">
+            </div>
+            
+             <!-- 諮詢類別 -->
+            <div class="form-group">
+                <label for="type">諮詢類別</label>
+                <select id="type" name="type">
+                    <option value="software-development">客製化軟體開發</option>
+                    <option value="system-integration">系統整合與流程優化</option>
+                    <option value="visual-design">視覺設計與品牌形象</option>
+                    <option value="ux-ui">用戶體驗與服務設計</option>
+                    <option value="cyber-security">網路安全與數據保護</option>
+                    <option value="ai-automation">AI 應用與自動化支持</option>
+                </select>
+            </div>
+
+            <!-- 專案描述 -->
+             <div class="form-group full-width">
+                <label for="message">關於您的專案</label>
+                <textarea id="message" name="message" placeholder="請描述您的專案內容"></textarea>
+             </div>
+
+            <!-- 送出表單 -->
+            <button type="submit" class="button-container">
+                <div class="button-background"></div>
+                <span class="button-text">送出表單<i class="ri-arrow-right-line"></i></span></button>
+        </form>
+    </main>
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+        <p>HOWDONE © All Rights Reserved.</p>
+        <div class="social-buttons">
+            <a href=""><i class="ri-facebook-circle-fill"></i></a>
+            <a href=""><i class="ri-instagram-fill"></i></a>
+        </div>
+  
+        </div>
+    </footer>
+
+</body>
+</html>

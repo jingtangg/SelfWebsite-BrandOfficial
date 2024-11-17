@@ -1,0 +1,151 @@
+/* TODO 要改下拉式樣式 */
+
+header{
+    /* background-image: url(../images/gradient_bg.png); */
+}
+main{}
+h1{
+    font-size: 72px;
+    text-align: center;
+    margin-top: 124px;
+    line-height: 1.2;
+    font-weight: 600;
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #8C8C8C;
+    max-width: 840px;
+    margin: 0 auto;
+    margin-bottom: 84px;
+}
+/* form */
+/* 整體表單樣式 */
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:48px;
+    max-width: 1047px;
+    max-height: 626px;
+    border: #1F1F1F 1px solid;
+    padding: 58px;
+    box-sizing: border-box;
+    margin: 0 auto 164px;
+}
+/* 單欄位樣式 */
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 多欄位樣式 */
+.form-group.full-width{
+    grid-column: span 2;
+}
+
+/* input標籤樣式 */
+.form-group label{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
+
+/* input輸入匡和選單樣式 */
+.form-group input,
+.form-group select,
+.form-group textarea{
+    border: #262626 1px solid;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #8C8C8C;
+    background-color: black;
+}
+
+/* 按鈕樣式 */
+.form-group button{
+    background-color: #F0FF92;
+    color: #1F1F1F;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* 單獨修改樣式 */
+textarea {
+    height: auto;
+    min-height: 144px;
+}
+
+button{
+    width: 128px;
+    height: 76px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    padding: 5px;
+    border:#F0FF92
+    
+}
+button:hover{
+    background-color: #F0FF92;
+}
+
+
+
+/* button */
+/* 重置按鈕樣式 */
+/* 按鈕樣式 */
+button {
+  all: unset; /* 移除原生樣式 */
+  position: relative;
+  display: inline-flex;
+  align-items: center; /* 垂直置中 */
+  justify-content: center; /* 水平置中 */
+  width: 192px; /* 按鈕寬度 */
+  height: 76px; /* 按鈕高度 */
+  border-radius: 50px; /* 長橢圓形 */
+  cursor: pointer; /* 鼠標樣式 */
+  overflow: hidden; /* 隱藏背景層的溢出內容 */
+  transition: all 0.3s ease; /* 平滑過渡 */
+  margin: 0 auto;
+}
+
+
+/* 背景層 */
+.button-background {
+  position: absolute;
+  inset: 0; /* 填滿整個按鈕 */
+  background: rgba(255, 255, 255, 0.05); /* 半透明背景色 */
+  border: 2px solid rgba(255, 255, 255, 0.15); /* 白色半透明邊框 */
+  border-radius: inherit; /* 與按鈕圓角一致 */
+  backdrop-filter: blur(20px); /* 背景模糊效果 */
+  z-index: 1; /* 確保在文字層下方 */
+  transition: all 0.3s ease;
+}
+
+/* 按鈕文字 */
+.button-text {
+  position: relative; /* 確保文字與背景分層 */
+  color: #333; /* 文字顏色 */
+  z-index: 2; /* 確保文字在最上層 */
+  display: inline-flex;
+  font-weight: 500;
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+margin: auto;
+  transition: all 0.3s ease;
+}
+
+
+/* hover 效果 */
+button:hover .button-background {
+  background: #F0FF92; /* 背景變亮黃色 */
+  border-color: rgba(255, 255, 0, 0.5); /* 邊框變成亮黃色 */
+  box-shadow: 0 4px 15px rgba(255, 255, 0, 0.5); /* 添加亮黃色陰影 */
+}

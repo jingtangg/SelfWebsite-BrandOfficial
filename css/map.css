@@ -1,9 +1,14 @@
-/* doto:有時間的時候改成google api */
+/* // TODO有時間的時候改成google api */
 /* Maps API 自訂地圖樣式或替換成靜態灰階圖片。 */
 /* 圖釘 */
 
-/* 全螢幕顯示地圖區域 */
-/* map-section 和 cursor-overlay 的樣式 */
+/* map */
+.footer-fixed{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1; 
+}
 .map-section {
     position: fixed;
     top: 0;
