@@ -145,3 +145,10 @@ main {
     transform: translate(-50%, -50%);
     z-index: 9999;
 }
+/* ------------- other ------------- */
+.spe-yellow{
+    color: #F0FF92;
+}
+.spe-gray{
+    color: #9B9B9B;
+}
