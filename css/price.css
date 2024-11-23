@@ -32,6 +32,7 @@ h2{
     padding: 58px;
     box-sizing: border-box;
     margin: 0 auto 164px;
+    position: relative;
 }
 /* 單欄位樣式 */
 .form-group{
@@ -41,6 +42,9 @@ h2{
 
 /* 多欄位樣式 */
 .form-group.full-width{
+    grid-column: span 2;
+}
+.button-text{
     grid-column: span 2;
 }
 
@@ -117,14 +121,21 @@ button {
 
 /* 背景層 */
 .button-background {
-  position: absolute;
-  inset: 0; /* 填滿整個按鈕 */
-  background: rgba(255, 255, 255, 0.05); /* 半透明背景色 */
-  border: 2px solid rgba(255, 255, 255, 0.15); /* 白色半透明邊框 */
-  border-radius: inherit; /* 與按鈕圓角一致 */
-  backdrop-filter: blur(20px); /* 背景模糊效果 */
-  z-index: 1; /* 確保在文字層下方 */
-  transition: all 0.3s ease;
+    position: absolute;
+    inset: 0; /* 填滿整個按鈕 */
+    border: 2px solid rgba(255, 255, 255, 0.15); /* 白色半透明邊框 */
+    border-radius: inherit; /* 與按鈕圓角一致 */
+    backdrop-filter: blur(20px); /* 背景模糊效果 */
+    z-index: 1; /* 確保在文字層下方 */
+    transition: all 0.3s ease;
+    background: radial-gradient(
+        circle,
+        rgba(240, 255, 146, 0.9),
+        rgba(240, 255, 146, 0.6)
+    );
+    box-shadow: 0 0 20px rgba(240, 255, 146, 0.5),
+                0 0 50px rgba(240, 255, 146, 0.2);
+    transform: scale(1.1);
 }
 
 /* 按鈕文字 */
@@ -134,12 +145,16 @@ button {
   z-index: 2; /* 確保文字在最上層 */
   display: inline-flex;
   font-weight: 500;
-left: 0;
-right: 0;
-top: 0;
-bottom: 0;
-margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   transition: all 0.3s ease;
+}
+.button{
+    grid-column: span 2; 
+    display:flex;
 }
 
 
@@ -148,4 +163,5 @@ button:hover .button-background {
   background: #F0FF92; /* 背景變亮黃色 */
   border-color: rgba(255, 255, 0, 0.5); /* 邊框變成亮黃色 */
   box-shadow: 0 4px 15px rgba(255, 255, 0, 0.5); /* 添加亮黃色陰影 */
+  transform: scale(1.1);
 }
