@@ -1,5 +1,5 @@
 /* banner block */
-.banner, .content>h3, .content>p{
+.banner, h3, .content>p, .feature>p {
     text-align: center;
     max-width: 840px;
     margin: 0 auto 40px;
@@ -50,7 +50,7 @@ h2{
 }
 .content p{
     color: #8C8C8C;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px 0 128px;
 }
 
@@ -129,7 +129,6 @@ h2{
     margin: 20px 0;
 }
 /*-------------------------- solution card ---------------------------*/
-/*-------------------------- solution card ---------------------------*/
 .solution{
     background-color: #0C0C0C;
 }
@@ -171,4 +170,121 @@ h2{
 }
 .solution-card:nth-child(even){
     transform: translateY(50px);
+}
+/*-------------------------- feature card ---------------------------*/
+.feature-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.feature-card{
+    position: relative;
+    border-radius: 16px;
+    background: linear-gradient(
+        to bottom,
+        rgba(29, 29, 29, 0.5),
+        rgba(16, 16, 16, 0.5)
+     ); 
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 40px 32px;
+    border: #191919 0.5px solid;
+}
+.feature-card:hover{
+    transform: translateY(-5px);
+}
+.feature-title{
+    font-size: 20px;
+    padding: 20px 0;
+    color:#FFFFFF;
+}
+.feature-desc{
+    font-size: 16px;
+    color: #9B9B9B;
+}
+.card-tall{
+    grid-row: span 2;
+}
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 500%;
+    background: radial-gradient(circle, rgba(122, 122, 122, 0.1), transparent 90%);
+    border-radius: 50%;
+    transform: translate(-80%, -80%) scale(0); /* 初始隱藏 */
+    pointer-events: none; /* 防止干擾滑鼠事件 */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.feature-card:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* 顯示光線效果 */
+}
+.feature-card:hover .feature-icon {
+    background: radial-gradient(circle, rgba(240, 255, 146, 0.4), rgba(240, 255, 146, 0));
+    transform: scale(1.1);
+    
+}
+.icon-svg {
+    z-index: 1;
+    stroke: rgba(240, 255, 146, 0.5); /* 初始顏色 */
+    transition: stroke 0.3s ease;
+}
+.feature-card:hover .icon-svg {
+    stroke: rgba(240, 255, 146, 1); /* hover 時改變顏色 */
+}
+.feature-icon-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+}
+.feature-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(31, 31, 31, 0.5),
+        rgba(31, 31, 31, 0.5)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+.feature-card:hover .feature-icon {
+    background: radial-gradient(
+        circle,
+        rgba(240, 255, 146, 0.6),
+        rgba(240, 255, 146, 0.6)
+    );
+    box-shadow: 0 0 20px rgba(240, 255, 146, 0.5),
+                0 0 50px rgba(240, 255, 146, 0.2);
+  
+    transform: scale(1.1);
+}
+.icon-svg {
+    z-index: 1;
+    stroke: rgba(240, 255, 146, 0.6); /* 初始顏色 */
+    transition: stroke 0.3s ease;
+}
+.feature>p{
+    font-size: 20px;
+}
+.feature{
+    margin: 160px;
 }
