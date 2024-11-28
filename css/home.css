@@ -1,18 +1,18 @@
 /* banner block */
-.banner, h3, .content>p, .feature>p {
+h3, .content>p, .feature>p {
     text-align: center;
     max-width: 840px;
     margin: 0 auto 40px;
 }
 h1{
-    font-size: 72px;
     line-height: 1.2;
-    font-weight: 900;
-    margin: 124px auto 20px;
     font-style: italic;
+    font-size: 4.5vw;
+    font-weight: 800;
+    margin-top:8vh;
 }
 h2{
-    font-size: 20px;
+    font-size: 1.2vw;
     color: #ffffff;
     margin: 0 auto 52px;
 }
@@ -21,10 +21,10 @@ h2{
     text-decoration: none;
     display: inline-block;
     text-align: center;
-    padding: 18px 44px;
+    padding: 20px 35px;
     border-radius: 80px;
     transition: transform 0.1s ease, background-color 0.2s ease;
-    margin-right: 20px;
+    margin: 10px;
 }
 .btn-default{
     background-color: #FFFFFF;
@@ -301,11 +301,19 @@ Canvas{
     pointer-events: none; 
 }
 .about-banner{
-    padding-top: 42px;
     position: flex;
     overflow: hidden;
-    width: 100%;
-    height: 100vh;
+    /* display: flex; */
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.banner{
+    text-align: center;
+    z-index: 1;
+    max-width: 840px;
+    margin: auto;
+    padding: 20px;
+    flex: 1; /* 彈性佔據空間 */
 }

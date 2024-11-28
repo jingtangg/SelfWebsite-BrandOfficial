@@ -83,7 +83,7 @@ ul li a{
     padding: 20px 20px; 
     line-height: 1;
     border-radius: 80px;
-    transition:  background-color 0.5s ease;
+    transition:  background-color 0.8s ease;
 }
 
 ul li:nth-child(5) a{
@@ -96,7 +96,7 @@ ul li:nth-child(5) a{
 }
 /* 動效 */
 ul li a:hover{
-    background-color: #3f3e3e;
+    background-color: #f0ff925b;
     border-radius: 80px;
     padding: 20px 20px;
     
@@ -104,9 +104,9 @@ ul li a:hover{
 ul li:nth-child(5) a:hover {
     border-radius: 80px;
     margin-left: 10px;
-    background-color: rgb(255, 255, 255, 0.7);
-    color: #1A1A1A;
-    transform: scale(1.01);
+    background-color: #f0ff92bf;
+    color: #000000;
+    transform: scale(1.02);
 }
 
 main {
@@ -115,7 +115,6 @@ main {
 }
 /* ------------- footer ------------- */
 .footer{
-    /* border: red 2px solid; */
     background-color: #1C1C1C;
     display: inline-flex;
     height: 84px;
@@ -130,8 +129,9 @@ main {
     left: 0;
     
 }
-.footer p{
-
+.footer a:hover{
+    background-color: #f1f1f1bc;
+    transition: background-color 0.8s ease;
 }
 .social-buttons{
     /* border: #F0FF92 2px solid; */
@@ -172,7 +172,12 @@ main {
 .star {
   animation: spin 16s linear infinite;
   width: 100px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
+}
+.star img {
+    max-width: 100%;
+    max-height: 100%; /* 防止超出 */
+    object-fit: contain;
 }
 @keyframes spin {
   from {
