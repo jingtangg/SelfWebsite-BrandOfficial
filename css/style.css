@@ -40,18 +40,36 @@ nav{
     width: 30px;
     height: 30px;
 }
+.logo-circle{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.8s ease;
+    overflow: hidden;
+    margin-left: -11px;
+    padding: 3px;
+}
+.logo-circle:hover{
+    background-color: rgb(255, 255, 255, 0.7);
+    
+}
+.logo-circle:hover img{
+    content: url('../images/haicon_yellow.png');
+}
 /* 主選單 */
 ul{
     display: flex;
     align-items: center;
-    /* border: red 2px solid; */
     font-size: 0;
     justify-content: flex-end;
     box-sizing: border-box;
     height: 84px;
 }
 ul li{
-    /* border: green 2px solid; */
     font-size: 18px;
     box-sizing: border-box;
     border-radius: 80px;
@@ -60,14 +78,13 @@ ul li{
 
 }
 ul li a{
-    /* border: yellow 2px solid; */
     color: #FFFFFF;
     text-decoration: none;
     display: block;
     padding: 20px 20px; 
     line-height: 1;
     border-radius: 80px;
-    transition: transform 0.1s ease, background-color 0.2s ease;
+    transition:  background-color 0.5s ease;
 }
 
 ul li:nth-child(5) a{
@@ -75,6 +92,7 @@ ul li:nth-child(5) a{
     margin-left: 10px;
     color: #1C1C1C;
     background-color: #FFFFFF;
+    transition: background-color 0.8s ease;
 
 }
 /* 動效 */
@@ -87,8 +105,9 @@ ul li a:hover{
 ul li:nth-child(5) a:hover {
     border-radius: 80px;
     margin-left: 10px;
-    color: #4D4D4D;
-    background-color: #FFFFFF;
+    background-color: rgb(255, 255, 255, 0.7);
+    color: #1A1A1A;
+    transform: scale(1.01);
 }
 
 main {
