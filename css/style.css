@@ -11,7 +11,6 @@ body{
 /* ------------- nav ------------- */
 header{
     padding-top: 42px;
-
 }
 nav{
     /* border: orange 2px solid; */
@@ -169,4 +168,17 @@ main {
 }
 .spe-gray{
     color: #9B9B9B;
+}
+.star {
+  animation: spin 16s linear infinite;
+  width: 100px;
+  margin: 0 auto;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
