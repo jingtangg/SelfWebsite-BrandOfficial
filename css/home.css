@@ -318,6 +318,7 @@ h3 > p{
     object-fit: cover;
     animation: zoom 8s ease-in-out infinite alternate; /* Zoom In 效果 */
 }
+/* ----------------背景動畫------------------ */
 
 /* Zoom In Keyframes */
 @keyframes zoom {
