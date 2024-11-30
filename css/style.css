@@ -114,7 +114,7 @@ main {
     width: 100%;
 }
 /* ------------- footer ------------- */
-.footer{
+.footer-black{
     background-color: #1C1C1C;
     display: inline-flex;
     height: 84px;
@@ -129,14 +129,50 @@ main {
     left: 0;
     
 }
-.footer a:hover{
+.footer-black a:hover{
     background-color: #f1f1f1bc;
     transition: background-color 0.8s ease;
 }
-.social-buttons{
+.social-buttons-black{
     /* border: #F0FF92 2px solid; */
 }
-.social-buttons a{
+.social-buttons-black a{
+    /* border: red 2px solid; */
+    background-color: #1C1C1C;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 36px;
+    height: 36px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; 
+}
+.footer-white{
+    background-color: #ffffff;
+    color: #0C0C0C;
+    display: inline-flex;
+    height: 84px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 56px;
+    font-weight: 450;
+    position: static;
+    bottom: 0;
+    left: 0;
+    
+}
+.footer-white a:hover{
+    background-color: #a0a0a0bc;
+    transition: background-color 0.8s ease;
+}
+.social-buttons-white{
+    /* border: #F0FF92 2px solid; */
+}
+.social-buttons-white a{
     /* border: red 2px solid; */
     background-color: #FFFFFF;
     border-radius: 50%;
@@ -149,7 +185,6 @@ main {
     align-items: center;
     font-size: 18px; 
 }
-
 /* ------------- cursor ------------- */
 /* cursor */
 .custom-cursor{
@@ -171,8 +206,8 @@ main {
 }
 .star {
   animation: spin 16s linear infinite;
-  width: 100px;
-  margin: 0 auto 40px;
+  width: 8vh;
+  margin: 0 auto 300px;
 }
 .star img {
     max-width: 100%;
