@@ -103,7 +103,27 @@ h2{
 .card-item i{
     padding-right: 4px;
 }
+.card-item:hover{
+    position: relative;
+    border-radius: 16px;
+    background: linear-gradient(
+        to bottom,
+        rgba(29, 29, 29, 0.5),
+        rgba(16, 16, 16, 0.5)
+     ); 
+    backdrop-filter: blur(12px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 40px 28px;
+    border: #191919 0.5px solid;
+}
+.card-item a:hover{
+    background-color: #6f725b;
+    color: #1C1C1C;
+    scale: 1.1;
 
+}
 /* 背景漸層 */
 .gradient {
     --size: 750px;
