@@ -441,3 +441,30 @@ h3 > p{
   
     transform: scale(1.02);
 }
+.star {
+  animation: spin 16s linear infinite;
+  width: 8vh;
+  margin: 0 auto 300px;
+}
+.star img {
+    max-width: 100%;
+    max-height: 100%; /* 防止超出 */
+    object-fit: contain;
+}
+    @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

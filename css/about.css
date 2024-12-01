@@ -5,15 +5,16 @@
     margin: 0 auto 92px;
 }
 h1{
-    font-size: 72px;
+    font-size: 62px;
+    text-align: center;
+    margin-top: 112px;
     line-height: 1.2;
-    font-weight: 500;
-    margin: 124px auto 20px;
+    font-weight: 400;
 }
 h2{
     font-size: 20px;
     color: #8C8C8C;
-    margin: 0 auto 52px;
+    margin: 20px auto 52px;
 }
 .btn{
     font-size: 18px;
@@ -46,12 +47,11 @@ h2{
 /* content */
 .content h3{
     font-size: 48px;
-    margin-top: 214px;
+    margin-bottom: 18px;
 }
 .content p{
     color: #8C8C8C;
     font-size: 18px;
-    margin-top: 20px 0 128px;
 }
 
 /* card */
@@ -104,18 +104,52 @@ h2{
     padding-right: 4px;
 }
 
-
-/* 星星容器 */
-.icon-container {
-    margin-right: 20px;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
+/* 背景漸層 */
+.gradient {
+    --size: 750px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(0, 0%, 68%), hsla(60, 60%, 61%, 0.174));
+    animation: rotate var(--speed) var(--easing) infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
-
-.icon-container img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.2s ease;
+     @media (min-width: 720px) {
+    .gradient {
+    --size: 500px;
+    }
 }
-
+/* 星星 */
+ .star {
+  animation: spin 16s linear infinite;
+  width: 48px;
+  margin: 300px auto 0;
+}
+.star img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%; /* 防止超出 */
+    object-fit: contain;
+}
+    @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    @keyframes spin {
+    from {
+    transform: rotate(0deg);
+  }
+    to {
+    transform: rotate(360deg);
+  }
+}
