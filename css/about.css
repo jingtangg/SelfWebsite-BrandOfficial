@@ -1,13 +1,16 @@
 /* banner block */
-.banner, .content h3, .content p{
-    text-align: center;
-    max-width: 840px;
-    margin: 0 auto 92px;
+.banner-focus {
+    width: 100%; /* 满版宽度 */
+    height: 100vh; /* 占满整个视窗高度 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-size: 62px;
     text-align: center;
-    margin-top: 112px;
+    /* margin-top: 112px; */
     line-height: 1.2;
     font-weight: 400;
 }
@@ -80,7 +83,7 @@ h2{
  .star {
   animation: spin 16s linear infinite;
   width: 48px;
-  margin: 300px auto 0;
+  margin: 0  auto ;
 }
 .star img {
     display: block;
@@ -203,7 +206,6 @@ h2{
     width: 100%; 
     }
 .card-item {
-
     padding: 30px 40px;
     border: 1px solid #1F1F1F;
     border-radius: 8px;

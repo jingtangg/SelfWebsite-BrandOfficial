@@ -5,10 +5,12 @@
     margin: 0 auto;
 }
 h1{
-    font-size: 72px;
-    line-height: 1.2;
-    font-weight: 500;
     margin: 124px auto 20px;
+    font-size: 62px;
+    text-align: center;
+    margin-top: 112px;
+    line-height: 1.2;
+    font-weight: 400;
 }
 h2{
     font-size: 20px;
@@ -59,6 +61,7 @@ h2{
     justify-content: center;
     align-items: center;
     margin-bottom: 60px;
+    margin-top: 100px;
 }
 
 /* 第一張和第三張卡片：圖片在左，文字在右 */
@@ -109,4 +112,64 @@ h2{
 }
 .custom-say{
     font-size: 16px;
+}
+/* 背景漸層 */
+.gradient {
+    --size: 750px;
+    --speed: 50s;
+    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    width: var(--size);
+    height: var(--size);
+    filter: blur(calc(var(--size) / 5));
+    background-image: linear-gradient(hsl(0, 0%, 68%), hsla(60, 60%, 61%, 0.174));
+    animation: rotate var(--speed) var(--easing) infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+     @media (min-width: 720px) {
+    .gradient {
+    --size: 500px;
+    }
+}
+.banner-focus {
+    width: 100%; /* 满版宽度 */
+    height: 100vh; /* 占满整个视窗高度 */
+    justify-content: center;
+    align-items: center;
+}
+/* 星星 */
+ .star {
+  animation: spin 16s linear infinite;
+  width: 48px;
+  margin: 0  auto ;
+}
+.star img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%; /* 防止超出 */
+    object-fit: contain;
+}
+    @keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+    @keyframes spin {
+    from {
+    transform: rotate(0deg);
+  }
+    to {
+    transform: rotate(360deg);
+  }
+}
+/* ------------card img-------- */
+.card img{
+
+    border-radius: 3px;
 }
