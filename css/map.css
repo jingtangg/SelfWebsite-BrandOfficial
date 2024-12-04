@@ -24,3 +24,14 @@
     height: 100%;
     filter: grayscale(95%);
 }
+.navTrigger i{
+
+}
+/* 針對地圖頁面的漢堡按鈕樣式，使用更高優先級 */
+body.map-page .navTrigger i {
+    background-color: #000; /* 黑色 */
+}
+
+body.map-page .navTrigger.active i {
+    background-color: #ffffff; /* 將橫線變為白色 */
+}
