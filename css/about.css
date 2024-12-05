@@ -400,3 +400,99 @@ h2{
     transform: translateY(-3px);
     transition: all 0.3s ease;
 }
+/* --------------------rwd--------------------- */
+@media screen and (max-width: 820px) {
+    .banner-focus{
+        height: 100%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size: 16px;
+    }
+    .content{
+        padding: 40px;
+        overflow: hidden;
+    }
+    .content h3{
+        font-size: 22px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content h4{
+        font-size: 18px;
+    }
+    .card-item>p{
+        font-size: 14.5px;
+        padding-top: 0;
+        margin-top: 4px;
+    }
+    .card-item{
+        margin: 28px 0;
+    }
+    .steps-left{
+        padding-right: 12px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .banner-focus{
+        height: 100vh;
+    }
+    h1{
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+    h2{
+        font-size: 13px;
+        padding: 12px 34px 0px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-default{
+        margin-top: 100px;
+    }
+    .btn-undefault{
+        margin-top: 20px;
+    }
+    .content{
+    padding: 0px 40px;
+    }
+    .card-wrapper{
+    display: flex;
+    flex-direction: column;
+    }
+    .card-item a{
+    font-size: 12px;
+    padding: 10px;
+    }
+    .card-item {
+    margin: 0;
+
+}
+.line {
+    position: absolute;
+    width: 1px;
+    background: #8C8C8C;
+    z-index: 0;
+}
+.line.up {
+    top: -7%;
+    right: 200%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+/* 下线条 */
+.line.down {
+    bottom: 6%;
+    left:200%;
+    height: 100%;
+    transform: rotate(90deg);
+}
+
+}

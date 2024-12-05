@@ -209,12 +209,12 @@ h2{
         height: 100vh;
     }
     h1{
-        font-size: 24px;
+        font-size: 36px;
         margin-bottom: 0;
     }
     h2{
         font-size: 13px;
-        padding: 12px 40px 0px;
+        padding: 12px 34px 0px;
     }
     .btn-default{
         margin-top: 100px;

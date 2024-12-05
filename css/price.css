@@ -240,7 +240,6 @@ button:hover .button-background {
 }
 
 @media screen and (max-width: 430px) {
-    
   .form-container {
         display: flex;
         flex-direction: column;
