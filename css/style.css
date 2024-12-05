@@ -363,6 +363,9 @@ main {
     max-width: 820px;
     width: 100%;
     }
+    .custom-cursor{
+    display: none;
+    }
 }
 @media screen and (max-width: 430px) {
     html{
@@ -401,6 +404,9 @@ main {
     h2{
     font-size: 13px;
     margin: 12px 32px 20px;
+    }
+    .custom-cursor{
+    display: none;
     }
 }
 

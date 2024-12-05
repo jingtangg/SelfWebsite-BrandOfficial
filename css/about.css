@@ -8,14 +8,14 @@
     align-items: center;
 }
 h1{
-    font-size: 62px;
+    font-size: 48px;
     text-align: center;
     /* margin-top: 112px; */
     line-height: 1.2;
     font-weight: 400;
 }
 h2{
-    font-size: 20px;
+    font-size: 16px;
     color: #8C8C8C;
     margin: 20px auto 52px;
 }
