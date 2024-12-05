@@ -134,12 +134,6 @@ h2{
     --size: 500px;
     }
 }
-.banner-focus {
-    width: 100%; /* 满版宽度 */
-    height: 100vh; /* 占满整个视窗高度 */
-    justify-content: center;
-    align-items: center;
-}
 /* 星星 */
  .star {
   animation: spin 16s linear infinite;

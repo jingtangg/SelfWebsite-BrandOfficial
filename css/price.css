@@ -203,10 +203,6 @@ button:hover .button-background {
     --size: 500px;
     }
 }
-.banner-focus{
-    width: 100%;
-}
-
 /* RWD */
 @media screen and (max-width: 820px) {
     .form-container{
