@@ -420,6 +420,8 @@ h2{
     }
     .content p{
         font-size: 16px;
+        padding: 0 20px;
+        
     }
     .content h4{
         font-size: 18px;
@@ -494,5 +496,10 @@ h2{
     height: 100%;
     transform: rotate(90deg);
 }
+    html{
+    max-width: 430px;
+    width: 100%;
+    box-sizing: border-box;
+    }
 
 }

@@ -382,7 +382,7 @@ main {
     html, body {
         max-width: 430px;
         width: 100%;
-            overflow-x: hidden;
+        overflow-x: hidden;
     }
 
     .gradient{
