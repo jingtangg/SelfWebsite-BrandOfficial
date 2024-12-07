@@ -408,6 +408,37 @@ main {
     .custom-cursor{
     display: none;
     }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: space-between; */
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-top: 380px;
+    }
+    .menu ul li {
+        margin: 0.5rem 0;
+        font-size: 24px;
+        text-align: center;
+        /* background-color: green; */
+    }
+    .menu ul li a {
+        display: block;
+        padding: 10px;
+    }
+    ul li {
+    background: none; 
+}
+    ul li a{
+    color: #9B9B9B;
+    background: none; 
+}
+    ul li:nth-child(5) a{
+    color: #9B9B9B;
+    background: none; 
+}
 }
 
 

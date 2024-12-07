@@ -253,4 +253,9 @@ h2{
     .card:nth-child(2) .card-item {
         order: 2; /* h3 和 p 在圖片下方 */
     }
+    .btn{
+        max-width: 288px;
+        width: 100%;
+        margin: 120px auto;
+    }
 }
