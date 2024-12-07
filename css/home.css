@@ -472,3 +472,171 @@ h3 > p{
     transform: rotate(360deg);
   }
 }
+/* RWD */
+@media screen and (max-width: 820px) {
+h2{
+    padding: 25px;
+    margin-top: 40px;
+}
+.banner{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.content h3{
+    margin-top:0px
+}
+.feature h3{
+    font-size: 22px;
+    /* margin-bottom: 8px; */
+}
+.feature >p{
+    font-size: 16px;
+    padding: 0 80px;
+    margin-bottom: 0;
+}
+.feature-container{
+    grid-template-columns:1fr 1fr 1fr;
+    gap:12px;
+    padding: 0 20px;
+}
+.feature-title{
+    font-size: 20px;
+}
+.feature-card > .feature-desc{
+    font-size: 16px;
+}
+.solution-container{
+    margin-top: 0;
+    /* margin-bottom: 0; */
+}
+.solution-card > .solution-desc{
+    font-size: 18px;
+    padding-top: 4px;
+}
+.solution-card h4{
+    font-size: 22px;
+    padding: 0;
+}
+.content h3{
+    font-size: 22px;
+}
+.custom-say>p{
+    font-size: 16px;
+}
+.card{
+    max-width: 820px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.outer-container{
+    max-width: 820px;
+    padding: 100px 0px;
+}
+.background-video{
+    margin-top: 160px;
+    height: 350px; 
+    overflow: hidden; 
+    object-fit: cover; 
+}
+}
+@media screen and (max-width: 430px) {
+.feature-container{
+    display: flex;
+    flex-direction: column;
+}
+.solution-container{
+    display: flex;
+    flex-direction: column;   
+}
+.card{
+    display: flex;
+    flex-direction: row;
+}
+.feature-container{
+    display: flex;
+    flex-direction: column;
+}
+.grid-container{
+grid-template-columns:1fr;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 16px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+.feature{
+    margin-top: 32px;
+}
+.content>.feature>p{
+    padding: 0 40px;
+}
+.feature-card{
+margin-bottom: 12px;
+}
+.content p{
+    font-size: 18px;
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0;
+}
+.custom-say>p{
+    padding: 0 40px;
+    text-align: center;
+}
+.footer-white{
+    font-size: 11px;
+}
+.footer-white span:nth-child(2){
+    display: none;
+}
+}
+@media screen and (max-width: 430px) {
+    .solution-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 單列排列 */
+        gap: 20px; /* 每個卡片之間的間距 */
+    }
+
+    .solution-card {
+        display: grid;
+        grid-template-rows: auto auto auto; /* 三行排列：圖片、標題、描述 */
+        gap: 10px; /* 卡片內部元素之間的間距 */
+        align-items: start; /* 垂直對齊到頂部 */
+        text-align: left; /* 文字靠左對齊 */
+    }
+
+    .image-container {
+        grid-row: 1; /* 圖片在第一行 */
+        width: 100%; /* 圖片自適應寬度 */
+        height: auto; /* 保持圖片比例 */
+    }
+
+    .solution-title {
+        grid-row: 2; /* 標題在第二行 */
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0; /* 移除多餘間距 */
+    }
+
+    .solution-desc {
+        grid-row: 3; /* 描述在第三行 */
+        font-size: 14px;
+        color: #8C8C8C;
+        margin: 0; /* 移除多餘間距 */
+    }
+
+    /* 隱藏原始的 odd/even 樣式 */
+    .solution-card:nth-child(odd),
+    .solution-card:nth-child(even) {
+        transform: none; /* 清除交錯效果 */
+    }
+    /* --------------客戶說--------------------- */
+
+}
+
