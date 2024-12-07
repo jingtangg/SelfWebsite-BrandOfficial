@@ -147,7 +147,7 @@ h3 > p{
     margin: 20px 0;
 }
 .custom-say>p{
-    margin: 0 auto 40px;
+    margin: 0 auto 0px;
     text-align: center;
 }
 /*-------------------------- solution card ---------------------------*/
@@ -571,7 +571,7 @@ h2{
     margin-top: 12px;
 }
 .feature{
-    margin-top: 32px;
+    margin-top: 120px;
 }
 .content>.feature>p{
     padding: 0 40px;
@@ -637,6 +637,17 @@ margin-bottom: 12px;
         transform: none; /* 清除交錯效果 */
     }
     /* --------------客戶說--------------------- */
-
+.outer-container{
+    display: flex;
+    flex-direction: column;
+}
+.card:nth-child(3n+2) {
+    display: none;
+}
+.outer-container{
+    /* padding: 0 20px; */
+/* margin: 0 20px; */
+    box-sizing: border-box;
+}
 }
 
