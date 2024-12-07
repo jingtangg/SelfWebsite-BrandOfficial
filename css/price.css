@@ -289,8 +289,11 @@ button:hover .button-background {
     .button{
         margin: 30px auto;
     }
-.form-group select {
-    padding: 10px !important;
+@media screen and (max-width: 430px) {
+    .form-group select {
+        padding: 10px !important; /* 強制應用 padding */
+        box-sizing: border-box; /* 確保內距正確計算 */
+    }
 }
 
 
