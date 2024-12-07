@@ -289,4 +289,16 @@ button:hover .button-background {
     .button{
         margin: 30px auto;
     }
+    .form-group select {
+    font-size: 14px;
+    padding: 10px; /* 添加有效的内边距 */
+    appearance: none; /* 移除默认样式 */
+    -webkit-appearance: none; /* 移除 Safari 默认样式 */
+    -moz-appearance: none; /* 移除 Firefox 默认样式 */
+    background: #fff; /* 设置背景颜色 */
+    border: 1px solid #ccc; /* 添加边框 */
+    border-radius: 4px; /* 添加圆角 */
+    box-sizing: border-box; /* 确保内边距生效 */
+}
+
 }
