@@ -482,6 +482,9 @@ h2{
     margin-top: 100px;
     margin-bottom: 20px;
 }
+css-doodle {
+
+}
 .content h3{
     margin-top:0px
 }
@@ -595,6 +598,7 @@ margin-bottom: 12px;
 .footer-white span:nth-child(2){
     display: none;
 }
+
 }
 @media screen and (max-width: 430px) {
     .solution-container {

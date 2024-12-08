@@ -289,31 +289,4 @@ button:hover .button-background {
     .button{
         margin: 30px auto;
     }
-@media screen and (max-width: 430px) {
-    .form-group {
-        position: relative;
-    }
-    .form-group select {
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        background: #fff;
-    }
-    .form-group::after {
-        content: '▼'; /* 自定義箭頭符號 */
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        transform: translateY(-50%);
-        pointer-events: none;
-        font-size: 12px;
-        color: #666;
-    }
-}
-
-
-
 }
