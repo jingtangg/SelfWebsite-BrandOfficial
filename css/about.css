@@ -442,6 +442,12 @@ h2{
     .banner-focus{
         height: 100vh;
     }
+    
+    .gradient{
+        max-width: 430px !important;
+        width: 100% !important;
+        overflow-x: hidden !important;
+    }
     h1{
         font-size: 36px;
         margin-bottom: 0;
@@ -454,6 +460,8 @@ h2{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 430px;
+        width: 100%;
     }
     .btn-default{
         margin-top: 100px;

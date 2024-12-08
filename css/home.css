@@ -526,9 +526,11 @@ css-doodle {
 }
 .content h3{
     font-size: 22px;
+    margin-bottom: 20px;
 }
 .custom-say>p{
     font-size: 16px;
+
 
 }
 .card{
@@ -657,6 +659,12 @@ margin-bottom: 12px;
     /* padding: 0 20px; */
 /* margin: 0 20px; */
     box-sizing: border-box;
+}
+h1{
+    margin-top:3vh;
+}
+.solution-title{
+    font-weight: 400;
 }
 }
 
